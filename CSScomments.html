@@ -1,0 +1,101 @@
+<!--CSS is an acronym for Cascading Style Sheets-->
+<!--Customizes the elements of a webpage / multiple pages to be displayed-->
+<!--
+    HTML - structure (ex. floor, roof walls)
+    CSS - decorations (ex. paint, furniture)
+    Javascript - function (ex. lighting, plumbing)
+-->
+<!--3 ways to include CSS
+    Inline - we add a style attribute to any element in our HTML document (Useful for a few elements)
+    Internal - we create a pair of style elements in the head of our HTML document and configure it there (useful for one page)
+    External - we link a .css file to our HTML file, this way we can style all pages by using only 1 .css file (useful for multiple pages)
+-->
+<!--  CSS example:   (for internal and external, not inline)
+        h1{color:green;}
+        element{property:value;after the semicolon you can add more properties}-->
+<!-- Inline (only if it is customizing an specific element, so not the body)overrides internal and external. Internal overrides external. -->
+
+<!--    Fonts
+[A set of characters of a particular style]
+[Two categories of fonts: Serif (with jagged edges/embelishments/small lines/serifs on some places of the letter)
+                          Sans-serif (without serifs) easier to read on computer screen-->
+<!--Gradient -> a gradual change from one color to another-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" type="text/css" href="CSSstylecomments.css"> <!--link rel -> rel -> relationship -> links the CSS file to the HTML file-->
+        <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet"> <!--We went to google fonts and linked this to a font, check Bro Code HTML & CSS Full Course 2:48:00-->
+
+        <!--Below is Internal CSS [pair of style tags]--><!--We type a tag/s seperated by a comma [ p, h1,... ], id [ #id ] or a class [ .class ] [ element.class ]-->
+        <style>
+
+            p.top{  
+                color: aqua;
+                background-color: #666666;
+            }
+
+        </style>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Document</title>
+
+    </head>
+
+    <body style="background-color:#111111;color: #00aa00;"> <!--Inline CSS-->
+    
+        <h1 class="top">CSS Demo</h1><!--Inline CSS--><!--class - creates a class in which we can add more elements and customize them by using their class-->
+
+        <p  class="top" id="paragraph1">ipsum dolor sit amet consectetur, adipisicing elit. 
+        Perspiciatis, itaque, cumque dignissimos repudiandae iusto,
+        nam atque eligendi consequatur aperiam voluptas libero inventore,  
+        ullam, animi, mollitia cum minus ea hic neque?</p>
+
+        <p id="paragraph2">ipsum dolor sit amet consectetur, adipisicing elit. 
+        Perspiciatis, itaque, cumque dignissimos repudiandae iusto,
+        nam atque eligendi consequatur aperiam voluptas libero inventore,  
+        ullam, animi, mollitia cum minus ea hic neque?</p>
+
+        <p id="paragraph3">ipsum dolor sit amet consectetur, adipisicing elit. 
+        Perspiciatis, itaque, cumque dignissimos repudiandae iusto,
+        nam atque eligendi consequatur aperiam voluptas libero inventore,  
+        ullam, animi, mollitia cum minus ea hic neque?</p>
+
+        <h1>Margins</h1> <!--Margins -> used to create space around elements-->
+
+        <h1>Shadows</h1>
+        <!--Text shadows = for text-->
+        <!--Box shadows = for other HTML elements. So if you have a border then it displaces the border lke the text-shodow displaces text-->
+        <!--We can add more than one shadow, they are seperated by a comma-->
+
+        <h1>Pseudoclasses</h1>
+        <!-- They are special keywords used to define special states of elements-->
+
+        <h1>Positioning</h1>
+
+        <!-- text-alignment -> we use this property to position text to the center, left, right-->
+        <!-- float property -> an element that has this property will have other elements float around it-->
+        <!-- position property -> used to position an element someplace on our webpage. It has 5 different values-->
+
+        <h1>Transformations</h1>
+        <!--Transform - css property used to apply a 2 dimensional or 3 dimensional transformation of a base element.-->
+
+        <h1>Animations</h1>
+        <!--Animation -> allows us to change some property of an element over the course of time instead of having it become an instantaneous change-->
+
+        <h1>Navigation Bar</h1>
+
+        <h1>FlexBoxes</h1>
+        <!-- Web layout model that allows for responsive elements within a container to be arranged depeneding on screen size and webpage layout-->
+        <!--Basically a flexible container that can also contain flexible items within-->
+
+        <h1>Icons</h1>
+        <!-- fontawesome.com  -> useful website for icons-->
+
+    </body>
+
+</html>

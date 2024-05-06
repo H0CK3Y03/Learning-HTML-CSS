@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!--This is a comment in html, works in all text editors-->
+<!--  This is also
+    a comment but written a different way
+-->
+<!--Exclamation point + TAB -> creates the necessary elements and tags for a new page-->
+<html>
+
+    <head>
+
+        <title>My website</title> <!--Title element -> title tags and everything [content] within.-->
+        <meta>  <!--self-closing meta data tag-->
+        <meta charset="UTF-8">  <!--Lets the web browser know which character set we are using [Ascii, Anci, Unicode{UTF-8}(The best one. All symbols and languages or smth idk)]-->
+        <meta name="keywords" content=""> <!--Sets some words that search engines search for-->
+        <meta name="description" content=""> <!--Makes a description for your webpage-->
+        <meta name="author" content="Some name"> <!--Sets the author of the webpage-->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"> <!--Viewport changes the viewing area of the webpage-->
+                            <!--Matches the dimensions for the device being used -> 1.0 -> zoom level-->
+        <meta http-equiv="refresh" content="x"> <!--Makes the webpage refresh every x seconds-->
+
+
+    </head>
+
+    <body style="background-color:lightgreen;color: aliceblue;"> <!--color -> font color, both can be placed basically everywhere-->
+        <!--Semicolons ; -> separate the arguments-->
+
+        <h1>My stuff</h1>  <!--This is a header. There are 6 heading sizes, where h1 is the largest and h6 is the smallest-->
+
+        <hr>  <!--This is a horizontal rule, this adds a horizontal line-->
+
+        <br><br><br>  <!--This is a line break [tag?], we don't need an ending tag, because this is a self ending / empty tag-->
+
+        <p>  <!--This is a paragraph element. Surrounds the text with new lines above and below -->  <!-- &nbsp  -> this is a non-breaking space -> if we want to add more spaces between words we use this, else they don't appear on the website -->
+
+           <!-- =lorem or lorem -> this is a keyword, which calls a bunch of sample text-->  
+           <!-- p*5>lorem  -> creates the sample text in five paragraphs--> 
+           <!-- lorem10 -> creates 10 words from lorem sample text--> 
+           <!--combined: p*x>loremy , where x and y are arbitrary numbers-->   
+
+        </p>
+                          
+        <h2>Text formatting</h2>
+
+        <!--Everything can be formatted with these characters {also by more than one character}-->
+        <b>bold text</b>  <!--This makes all text inbetween bold-->
+        <i>italic text</i>  <!--This makes all text inbetween italic [angled basically to the right / leaning right]-->
+        <sub>subscript text</sub>  <!--This makes all text inbetween subscript [basically an index at the bottom of a letter or number]-->
+        <sup>superscript</sup>  <!--This makes all text inbetween superscript [basically an exponent, at the top of a letter or number]-->
+        <small>small text</small> <!--This makes all text inbetween small [basically like subscript and superscript but it doesn't move anywhere]-->
+        <big>big text</big>  <!--This makes all text inbetween big-->
+        <ins>inserted text</ins>  <!--This makes all text inbetween inserted [basically it underlines the text]-->
+        <del>deleted text</del>  <!--This makes all text inbetween deleted [basically it crosses out the text, puts a line through it]-->
+        <mark>marked text</mark>  <!--This makes all text inbetween marked [basically it highlights the text]-->
+
+        <hr>
+
+        <!--Attributes - all elements in html have attributes.
+        They provide additional information about an element that contains an attribute.
+        They are used in the opening tags of an element and come in name:value pairs-->
+
+        <a>hyperlink text</a>  <!--  <a></a>  ->  Functions as a hyperlink [we need to put href=, as well], that can link the text inbetween to another webpage that we specify-->
+                               <!-- <a href="file path \ adress page we want to go to"> , href -> hypertext reference-->
+ 
+                                <a href="adress" target=_blank>  <!--  target=_blank  ->  when clicked, the link opens a new tab instead of staying on the same one-->
+ 
+            <a href="filepath" download="name">download file</a> <!--  download="name" -> when clicked, downloads the file and names it by "name" or the OG name stays-->
+
+            <img src="filepath">  <!--  <img>  -> self closing tag, src="filepath / web adress"-->
+            <!--  <img src="filepath" height=pixels / percentage width=pixels / percentage>  -->
+            <!--  <img src="filepath" height=x/x% width=y/y% alt="Text"  -> alternate text will show if image doesn't appear [maybe bad filepath]>  -->
+            <a href="adress / filepath"><img src="filepath"></a>  <!--Filepath opens the picture, adress takes you to the adress-->
+
+            <br><br><hr>
+
+        <h4>LISTS</h4>
+
+            <li></li>  <!--List item, adds items to the list. By default they are bulleted {there are circles}-->
+                                    
+            <ul></ul>  <!--Unordered list, where the order of list items doesn't matter-->
+            <ul style="list-style-type: circle;"></ul>  <!--  style="list-style-type:"--> <!--changes the indenting shapes to something you choose-->            
+                        <!--List types = [decimal - numbered], [circle - empty circles], [square - full squares], [none - no bullet points], [disc - full circles{on by default}]-->
+                                    
+                        <ol></ol>  <!--Ordered list, where the order of list items matters. by default it is numbered.-->
+            <ol type="A"></ol>  <!--type="A" changes the numbering to alphabetic ordering.-->
+                                <!--types -> [A - uppercase letters from A], [a - lowercase letters from a], 
+                                [I - Uppercase roman numerals], [i - lowercase roman numerals], 
+                                [1 - numeric numbering {by default}]-->
+            <ol type="1" start="20"></ol>  <!--start="x" changes the starting point of the numbering [x has to be a number -> it is the position from where you start -> 3 -> 3rd position]-->
+            <!--Works with all types if start is number. For the alphabet [A or a] you will have multiple letters -> AA -> 27, AB -> 28...-->
+                                
+            <dt></dt>  <!--Description / Definition term, text that you want to define / describe. Follwed by description details <dd></dd>-->
+                                
+            <dd></dd>  <!--Description / Definition details, text that describes the description term. Under it in bullet points with dashes-->
+
+            <dl></dl>  <!--Description / Definition list. A list of list items with a description for each one-->
+
+            <ol>
+                <li>text item</li>
+            </ol>
+
+            <ul>
+                <li>A nested List
+
+                    <ul></ul>  <!--A list inside of a list. Could be any list type. -->
+
+                </li>
+
+            </ul>
+
+        <h3>TABLES</h3>
+        
+            <table></table>  <!--Everything inbetween is a pert of our table-->
+            <table border=2 bgcolor="black"></table>  <!--border=x -> creates a border with a width of x amount of pixels or an x amount percentage of the available space on webpage [so it resizes with the webpage]-->
+            <table height=10 width=75></table>
+            
+            <tr></tr>  <!--Table row -> everythin inbetween will be in the first table row, for another row we type another set of <tr></tr> outside of the previous one-->
+            <tr bgcolor="blue"></tr>  <!--adds a background color for our row. Works for tables and individual cells as well-->
+            <tr align="center"></tr>  <!--aligns the text of the table row / cell / table /... to the center / left / right-->
+            
+            <th></th>  <!--Table heading, a heading for this cell. Text is bold and centered by default-->
+            <th bgcolor="cyan"></th>
+            <th height=10 width=75></th>  <!--A minimum amount of pixels wide and high. The whole column changes too-->
+            <!--We can do it to the table too-->
+            
+            <td></td>  <!--Table data, data/text inside this cell. Text is not bold and is aligned to the left-->
+            <td bgcolor="purple" align="right"></td>
+
+        <h3>AUDIO</h3>
+
+            <!--HTML5 only supports these audio files:
+            .mp3  .wav  .ogg  [maybe .mp4 audio is also supported]. .mp3 is best because it works on all web browsers-->
+
+                <audio controls loop muted autoplay>  <!--Allows audio. controls -> adds a audio control bar-->
+                    <!--loop -> loops the song continuously instead of stopping at the end-->
+                    <!--muted -> audio begins muted-->
+                    <!--autoplay -> the audio automatically begins playing. Doesn't work on chrome. Works on Internet explorer-->
+                
+                    <source src="C:\Users\adamv\Desktop\The City Must Survive - Frostpunk.mp3">
+
+
+                </audio>  
+
+        <h3>VIDEOS</h3>
+
+            <!--HTML5 only supports these video files:
+            .mp4  .webM  .ogg-->
+
+            name of video:  <!--This is text before the video so it can be used as a name/title for the video-->
+            <br>
+            <video height="50%" width="50%" loop muted autoplay>  <!--allows a video. Changes the size-->
+                <!--We can make a sort of uniteractable background video if we don't type control into opening video tag-->
+
+                <source src="filepath">
+
+            </video>
+
+        <h3>BUTTONS</h3>
+
+            <button name="simple_button" type="menu" value="Something">  <!--Creates a button-->
+                <!--name -> probably for cross coding in CSS and Javascript-->
+                <!--value -> will be useful when coding with Javascript or PHP-->
+                <!--4 types of buttons: normal button, reset button, submit button, menu button -->
+
+                text   <!--Text of the button-->
+
+            </button>
+
+            <button disabled>  <!--creates a greyed out button which cannot be clicked upon-->
+
+                Disabled
+
+            </button>
+
+            <button autofocus>  <!--creates a highlighted button [a button with a bigger border]-->
+                <!--However if we click somewhere else, the button will no longer be highlighted unless we refresh the page-->
+
+                Autofocus button
+
+            </button>
+
+            <button onclick="alert('You clicked on a button OMG')"> <!--When clicked, this button displays a message [basically a chrome popup]-->
+
+                ALERT!!!
+
+            </button>
+
+            <a href="https://www.youtube.com/watch?v=cyuzt1Dp8X8" target="_blank"> <!--When clicked, goes to the adress/filepath-->
+                <button> <!--target can be: _self[default], _blank[new tab], _parent[kind of like _self], _top[again something like _self]-->
+
+                    BRO/CODE
+
+                </button>
+
+                <button style="background-color:#97f7cc"> <!--with style we can change a lot of things about the button-->
+
+                    CSS Stylized button
+    
+                </button> <!--color -> font color, font-family -> font type [Courier, Arial...]-->
+
+                <button onclick="doSomething()"> <!--onclick="javascript function"-->
+                    <p id="test">Hello</p>  <!--Sets the id attribute of the paragraph element to test-->
+                    <!--When we click on this button, the function below will be called / executed-->
+                    <!--Right now it changes the content of the paragraph tags to Goodbye, because the p tags have an id of test-->
+                    <script>  
+                        function doSomething(){
+                            document.getElementById("test").innerHTML = "Goodbye";
+                        }
+                    </script>
+                </button>
+
+        <h3>FORMS</h3>
+
+                <form action="DO_SOMETHING.PHP" method="post" required> <!--creates a form. Action will run whatever the file/script contains / will send data to action-->
+                        <!--required -> boolean attribute. They will be required to fill in information here-->
+                        <!--method [get / post] if get -> will add question mark + data to URL. if post -> won't do that-->
+                    <label for="first_name">First Name:</label> <!--makes this text a label. for -> makes an id for the text box-->
+                    <input type="text" id="first_name" name="first_name" placeholder="defaultvalue"> <!--Creates a textbox where we can write and submit something. id -> makes this act like a variable from python?. The label and the textbox are now linked together-->
+                    <!--A benefit is, if we click on the label First Name: we automatically select the textbox so we can type. Useful counter for fatfingering-->
+                    <!--id -> client-side identifier mostly used for CSS and Javascript to uniquely identify that specific element-->
+                    <!--name -> attribute that is used during form submission to post or get the values that we submit when we hit a submit button. Common naming convention -> id and name should be the same-->
+                    <!--placeholder -> input starts with a default value already typed in, it is greyed out and cannot be deleted, only overwritten-->
+                    <!--input types= "reset"[reset button], "text"[textbox/area], "submit"[submit button], "radio"[radio button], "email"[email textbox], "date"[date selector], "quantity"[quantity box{min and max works here and at dates too}]... -->
+                    <!--submit -> sends the input information from the form to whatever page/file that the action attriute contains. if no such file exists, we get an error -> Your file was not found. Same with page I assume-->
+                    <select id="some id">  <!--creates a dropdown menu with various options inside and sends the selected ones to the id holder-->
+
+                        <option></option> <!--an option in the dropdown menu-->
+
+                    </select>
+
+                </form>
+
+        <h3>META TAGS</h3> <!--Meta tags are used for meta data -> information about data [data about data]-->
+                <!--We place them within the head of our HTML document, not the body-->
+
+        <h3>Span and Div Tags</h3> <!--Define a section or division on our HTML page-->
+
+        <h4>Span tag</h4> <!--We can target an element or portion of our webpage that we want to style. Bsically affects everything inbetween the span tags-->
+
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Rerum modi vitae necessitatibus fugiat perferendis, 
+                facilis architecto alias quia saepe molestiae dicta libero, 
+                consequatur possimus earum cupiditate omnis sequi, inventore magnam.
+
+            <h4>Div tag</h4>  <!--Anything within div tags is considered a block element [text will begin on a new line and it will take up the full width of the webpage in a single line -> resizes with the webpage] anything after that will also begin on a new line-->
+
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Mollitia, voluptas quod. Quaerat accusamus facere reprehenderit, 
+                soluta non eaque quam quis eum omnis officia pariatur,
+                numquam ullam tenetur corrupti dolorum animi!
+
+        <h3>iFrames</h3> <!-- iframe = embed content from another source into an HTML document ex. used for ads, used in many hacking techniques-->
+
+                <iframe src="adress / filepath"></iframe> <!--Some websites don't work, because they have disabled the use of iframes-->
+
+    </body>
+
+</html>

@@ -1,0 +1,72 @@
+/*comments are made like this in CSS*/
+
+/*We just list the elements/ids/classes, properties and values here
+Fonts
+    [A set of characters of a particular style]
+    [Two categories of fonts: serif {with lines on characters}, san-serif {without the lines}]*/
+
+html{
+    background-image: url(images/cool.png); /*bigger is better [for quality]*/
+    background: linear-gradient(gray,black);   /*Creates a gradinet effect. [fromcolor,tocolor]*/
+    background-repeat: no-repeat; /*doesn't repeat the background, instead there will be white. If an image is smaller, than it creates the same image more times, this stops that*/
+    background-position: center; /*will center the background image, in the middle of the webpage*/
+    background-size: cover; /*will cover the whole width of the webpage*/
+    background-attachment: fixed; /*background will not scroll with the page*/
+
+    margin: -20px; /*there already is a margin set to default, but it starts at 0 even though it is like 20px sometimes so you need to - 20px to get 0px margin
+}
+
+body{
+    background-color: #111111;
+}
+h1{
+    background-color: #111111;
+    color: #00aa00;
+}
+
+p{
+    background-color: #111111;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, sans-serif;  /*uses the first font, if the font can't be displayed it cycles through all the other fonts that we input. sans-serif is a good backup font
+                                        if the font contains a space, we need to surround it in quotes*/
+    font-style: italic;   /*the style of the font*/ 
+    font-weight: bold; /*bolds the text*/
+    font-size: 18px; /*default is 16px / font-size: 2em; default is 1em -> 16px, so 2em is 32px*/
+    text-decoration: underline wavy blue; /*underlines the text, more useful stuff there, wavy is a style of underline, we can also add a color at the end*/
+    border-style: solid; /*creates a border around these elements/ids/classes. Border color depends on font color if there is no border-color attribute*/
+    border-style: dashed; /*if you have two of the same attributes, css uses the most recent one, so the one nearest to the bottom*/
+    padding: 5px; /*adds space around the contents of this element*/
+    border-radius: 50px; /*makes the border rounder I guess*/
+    border-width: 4px 5px 4px 5px;  /*4 values: Top Right Bottom Left*/
+}
+
+h1{
+    border: 1px solid;
+    width: 300px;
+    margin-bottom: 0px;
+}
+p{
+    border: 1px solid;
+    width: 250px;
+    padding: 25px; /*Padding is the distance between an item in an element and a border around the element*/
+    margin: 25px;  /*Margin -> distance from an HTML element to other HTML elements and/or the edge of the browser window*/
+}
+h1{
+    border: 1px solid;
+    width: 200px;
+    padding: 25px;
+
+    text-shadow: 0px 0px 0px blue, 1px 1px 1px green; /*two shadows sepreated by a comma*/
+    /* horizontal (px) -> horizontal displacement relative to the text, positive number ->right, negative <- left [basically duplicates the text and moves it to a side by x amount of pixels]
+       vertical (px) -> vertical displacement relative to the text, positive downwards, negative upwards [basically x and y coordinates like in tkinter]
+       blur (px) -> magnitude of blur effect in pixels,
+       color (name/rgb/hex),
+    */
+
+    box-shadow: 0px 0px 0px blue, 1px 1px 1px green;
+    /* horizontal (px) -> horizontal displacement,
+       vertical (px) -> vertical displacement,
+       blur (px) ->blur effect,
+       color (name/rgb/hex),
+    */
+}
